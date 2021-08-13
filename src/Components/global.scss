@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+$darkBlue: rgba(0, 97, 253, 1);
+$backgroundDark: #141414;
+$hoverDarkGray: #2f2f2f;
+$textLightGray: rgba(235, 235, 245, 0.6);
+$discountColor: rgba(177, 221, 139, 1);
+$white: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $backgroundDark;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,182 @@
+@import "../global.scss";
+
+.icon {
+  color: $textLightGray;
+}
+.input-field:focus {
+  border: none;
+  outline: $textLightGray !important;
+  border-radius: 25px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 250px;
+  width: calc(100% - 250px);
+}
+
+/* Search Styling */
+
+.search-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 100px);
+  padding: 50px 0px 50px 0px;
+
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    list-style: none;
+    li {
+      padding: 10px;
+      border-radius: 25px;
+      cursor: pointer;
+      &:hover {
+        background: $darkBlue;
+        a {
+          color: $white;
+        }
+      }
+      a {
+        color: $textLightGray;
+      }
+    }
+  }
+}
+
+.search-section-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .notification-icon {
+    margin-right: 10px;
+    &:hover {
+      color: $white;
+    }
+  }
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .search-icon {
+      position: absolute;
+      z-index: 100;
+      left: 7px;
+      top: 7px;
+    }
+    .input-field {
+      width: 300px;
+      background-color: $hoverDarkGray;
+      height: 2rem;
+      border: none;
+      border-radius: 25px;
+      text-indent: 30px;
+      color: $white;
+    }
+  }
+}
+
+/* End of Search Styling */
+
+/* Hero Styling */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 100px);
+  height: 500px;
+  .main {
+    flex: 4;
+  }
+  .list {
+    flex: 1;
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent),
+    url("./assets/main-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: $white;
+  padding: 20px;
+  border-radius: 12px 0px 0px 12px;
+  h3 {
+    font-size: 1.2rem;
+  }
+  .hero-text {
+    p {
+      margin-bottom: 20px;
+    }
+    h3 {
+      margin-bottom: 20px;
+    }
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $darkBlue;
+      color: $white;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      .arrow-icon {
+        font-size: 1.2rem;
+        padding-left: 5px;
+        transform: scale(1.3);
+        transition: all 0.3s ease;
+      }
+      &:hover {
+        background-color: blue;
+        .arrow-icon {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+}
+
+.list-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 12px 12px 0px;
+  height: 100%;
+  margin-left: 4px;
+  background-color: $hoverDarkGray;
+  ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    list-style: none;
+    margin: 10px;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      p {
+        font-size: 14px;
+        font-weight: 300;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+/* End of Hero Styling */

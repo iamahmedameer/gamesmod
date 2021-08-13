@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #141414;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  color: rgba(235, 235, 245, 0.6);
+}
+
+.input-field:focus {
+  border: none;
+  outline: rgba(235, 235, 245, 0.6) !important;
+  border-radius: 25px;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 250px;
+  width: calc(100% - 250px);
+}
+
+/* Search Styling */
+.search-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% - 100px);
+  padding: 50px 0px 50px 0px;
+}
+
+.search-section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  list-style: none;
+}
+
+.search-section ul li {
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.search-section ul li:hover {
+  background: #0061fd;
+}
+
+.search-section ul li:hover a {
+  color: #fff;
+}
+
+.search-section ul li a {
+  color: rgba(235, 235, 245, 0.6);
+}
+
+.search-section-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-section-right .notification-icon {
+  margin-right: 10px;
+}
+
+.search-section-right .notification-icon:hover {
+  color: #fff;
+}
+
+.search-section-right .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.search-section-right .search .search-icon {
+  position: absolute;
+  z-index: 100;
+  left: 7px;
+  top: 7px;
+}
+
+.search-section-right .search .input-field {
+  width: 300px;
+  background-color: #2f2f2f;
+  height: 2rem;
+  border: none;
+  border-radius: 25px;
+  text-indent: 30px;
+  color: #fff;
+}
+
+/* End of Search Styling */
+/* Hero Styling */
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% - 100px);
+  height: 500px;
+}
+
+.hero .main {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.hero .list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(transparent)), url("./assets/main-image.png");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), url("./assets/main-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px 0px 0px 12px;
+}
+
+.main h3 {
+  font-size: 1.2rem;
+}
+
+.main .hero-text p {
+  margin-bottom: 20px;
+}
+
+.main .hero-text h3 {
+  margin-bottom: 20px;
+}
+
+.main .hero-text button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0061fd;
+  color: #fff;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.main .hero-text button .arrow-icon {
+  font-size: 1.2rem;
+  padding-left: 5px;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main .hero-text button:hover {
+  background-color: blue;
+}
+
+.main .hero-text button:hover .arrow-icon {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0px 12px 12px 0px;
+  height: 100%;
+  margin-left: 4px;
+  background-color: #2f2f2f;
+}
+
+.list-items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style: none;
+  margin: 10px;
+}
+
+.list-items ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.list-items ul li p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+/* End of Hero Styling */
+/*# sourceMappingURL=Navbar.css.map */

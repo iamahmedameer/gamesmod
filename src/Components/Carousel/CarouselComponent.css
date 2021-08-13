@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #141414;
+}
+
+a {
+  text-decoration: none;
+}
+
+.carousel-div {
+  width: calc(100% - 100px);
+  position: relative;
+}
+
+.carousel-div h3 {
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.carousel-button-group {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+.carousel-button-group button {
+  background-color: transparent;
+  border: none;
+}
+
+.carousel-button-group .left-arrow {
+  font-size: 2rem;
+  color: rgba(235, 235, 245, 0.6);
+  margin-right: 30px;
+}
+
+.carousel-button-group .left-arrow:hover {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #fff;
+}
+
+.carousel-button-group .right-arrow {
+  font-size: 2rem;
+  color: rgba(235, 235, 245, 0.6);
+}
+
+.carousel-button-group .right-arrow:hover {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #fff;
+}
+
+.card-info .name {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.card-info .category {
+  margin-top: 10px;
+  color: rgba(235, 235, 245, 0.6);
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.price-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.price-div .percentage {
+  background-color: #b1dd8b;
+  padding: 2px;
+  border-radius: 7px;
+  margin-right: 15px;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+.price-div .discount {
+  margin-right: 15px;
+  color: rgba(235, 235, 245, 0.6);
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.price-div .price {
+  color: #fff;
+  font-size: 14px;
+}
+/*# sourceMappingURL=CarouselComponent.css.map */
